@@ -7,6 +7,7 @@
 - istall prefered Ide (example: Visual Studio Code, IntelliJ etc.)
 - install Ide extensions: ESLint, Playwright, Prettier, Live Preview
 - install nodeJS LTS (latest stable version) from `https://nodejs.org/en/download`
+- check your nodeJS installed version with terminal command `npm -v` and `node -v`
 
 ### Project Set Up
 
@@ -14,11 +15,13 @@
 - `npm install`
 
 - install playwright with dependenices:
-- using normal set up `npx playwright install` or silent insall `npx playwright install --with-deps`
+- using normal install `npx playwright install` or silent install `npx playwright install --with-deps`
 
 - finally run all tests by providing an enviroment and language to use when logging into Banker
 - `npx playwright test`
-- you can run only 1 test by addint test.only to the implementation
+
+- you can run only 1 test by addint `.only` to the test implementation, example: 
+- `test.only(`Login with valid creds`, { tag: ['@ui'] }, async ({ page }) => {`
 
 ## Set up VS Code User Settings with:
 
