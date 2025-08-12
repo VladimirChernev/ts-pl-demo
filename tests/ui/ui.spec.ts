@@ -7,7 +7,7 @@ test(`Login with valid creds`, { tag: ['@ui'] }, async ({ page }) => {
 
   await page.locator('#loginusername').fill('karamfilovs@gmail.com');
   await page.locator('#loginpassword').fill('111111');
-  await expect(page.locator(`//label[@class='login-language-label selenium-label-language-id-BG']//input[@type='radio']`)).toBeChecked();
+  await expect(page.getByRole('radio', { name: 'Български' })).toBeChecked();
 
   await page.locator('#loginsubmit').click();
   await expect(page).toHaveTitle('Система за фактуриране - QA Ground');
@@ -19,7 +19,7 @@ test(`Login with bad creds`, { tag: ['@ui'] }, async ({ page }) => {
 
   await page.locator('#loginusername').fill('karamfilovs@gmail.com');
   await page.locator('#loginpassword').fill('wrongpassword');
-  await expect(page.locator(`//label[@class='login-language-label selenium-label-language-id-BG']//input[@type='radio']`)).toBeChecked();
+  await expect(page.getByRole('radio', { name: 'Български' })).toBeChecked();
 
   await page.locator('#loginsubmit').click();
   await expect(page).toHaveTitle('Вход - QA Ground');
@@ -32,7 +32,7 @@ test(`Login with  blank creds`, { tag: ['@ui'] }, async ({ page }) => {
 
   await page.locator('#loginusername').fill('');
   await page.locator('#loginpassword').fill('');
-  await expect(page.locator(`//label[@class='login-language-label selenium-label-language-id-BG']//input[@type='radio']`)).toBeChecked();
+  await expect(page.getByRole('radio', { name: 'Български' })).toBeChecked();
 
   await page.locator('#loginsubmit').click();
   await expect(page).toHaveTitle('Вход - QA Ground');
@@ -45,7 +45,7 @@ test(`Login & logout`, { tag: ['@ui'] }, async ({ page }) => {
 
   await page.locator('#loginusername').fill('karamfilovs@gmail.com');
   await page.locator('#loginpassword').fill('111111');
-  await expect(page.locator(`//label[@class='login-language-label selenium-label-language-id-BG']//input[@type='radio']`)).toBeChecked();
+  await expect(page.getByRole('radio', { name: 'Български' })).toBeChecked();
 
   await page.locator('#loginsubmit').click();
   await expect(page).toHaveTitle('Система за фактуриране - QA Ground');
