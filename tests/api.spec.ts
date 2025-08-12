@@ -45,7 +45,7 @@ const defaultHeaders = {
     url: 'https://api.inv.bg/v3/items',
     headers: defaultHeaders,
     body: {
-      name: 'davka turbo',
+      name: 'дъвка Turbo',
       price: 0.23,
       currency: 'BGN',
       price_for_quantity: 1,
