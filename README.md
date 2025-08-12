@@ -4,10 +4,9 @@
 
 ### Pre-condition:
 
-- istall Ide (Visual Studio Code), including IDE extensions: ESLint, Playwright, Prettier, Live Preview
+- istall prefered Ide (example: Visual Studio Code, IntelliJ etc.)
+- install Ide extensions: ESLint, Playwright, Prettier, Live Preview
 - install nodeJS LTS (latest stable version) from `https://nodejs.org/en/download`
-- install GIT from `https://git-scm.com/downloads/win`
-- set up GIT using your credentials with console commands `git config --global user.name "John Doe"` and `git config --global user.email johndoe@example.com`
 
 ### Project Set Up
 

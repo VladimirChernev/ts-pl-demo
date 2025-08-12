@@ -1,7 +1,6 @@
 import { test, expect } from '@playwright/test';
 
 test(`Login with valid creds`, { tag: ['@ui'] }, async ({ page }) => {
-
   await page.goto('https://st2016.inv.bg/');
   await expect(page).toHaveTitle('Вход - QA Ground');
 
