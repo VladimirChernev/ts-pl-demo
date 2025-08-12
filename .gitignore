@@ -1,0 +1,8 @@
+# General
+/.vs/
+/.vscode/
+/.github/
+/node_modules/
+
+# Playwright
+/reports/
