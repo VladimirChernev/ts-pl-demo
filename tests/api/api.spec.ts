@@ -122,7 +122,7 @@ const defaultHeaders = {
     headers: defaultHeaders,
   },
 ].forEach(({ url, headers }) => {
-  test.only(`Delete item `, { tag: ['@api'] }, async ({ request }) => {
+  test(`Delete item `, { tag: ['@api'] }, async ({ request }) => {
     console.log(`POST ${url}`);
 
     const response: APIResponse = await request.delete(url, {

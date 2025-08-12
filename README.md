@@ -18,6 +18,7 @@
 
 - finally run all tests by providing an enviroment and language to use when logging into Banker
 - `npx playwright test`
+- you can run only 1 test by addint test.only to the implementation
 
 ## Set up VS Code User Settings with:
 
