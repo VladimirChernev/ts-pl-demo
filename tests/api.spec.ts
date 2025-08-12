@@ -1,10 +1,11 @@
 import { test, APIResponse, expect } from '@playwright/test';
 
+const apiToken =
+  'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmaXJtSUQiOjI4OTAwLCJ1c2VySUQiOjQsImlhdCI6MTc1NDk5MTE1MywiZXhwIjoxNzU1MDc3NTUzLCJzY29wZSI6WyJodW1hbiIsImFkbWluIl19.3QhtRXY_vhzjoqcO_hppp55XEtoRWsUlIFJIAAYyQg8';
 const defaultHeaders = {
   Accept: 'application/json',
   'Content-Type': 'application/json',
-  Authorization:
-    'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmaXJtSUQiOjI4OTAwLCJ1c2VySUQiOjQsImlhdCI6MTc1NDk5MTE1MywiZXhwIjoxNzU1MDc3NTUzLCJzY29wZSI6WyJodW1hbiIsImFkbWluIl19.3QhtRXY_vhzjoqcO_hppp55XEtoRWsUlIFJIAAYyQg8',
+  Authorization: `Bearer ${apiToken}`,
   'Accept-Language': 'bg',
 };
 
