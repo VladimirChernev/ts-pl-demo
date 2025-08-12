@@ -1,4 +1,4 @@
-# Banker QA Automation Framework
+# Typescript and Playwright Demo Project
 
 ## Istallation
 
@@ -7,7 +7,7 @@
 - istall Ide (Visual Studio Code), including IDE extensions: ESLint, Playwright, Prettier, Live Preview
 - install nodeJS LTS (latest stable version) from `https://nodejs.org/en/download`
 - install GIT from `https://git-scm.com/downloads/win`
-- set up GIT with own credentials with console commands `git config --global user.name "John Doe"` and `git config --global user.email johndoe@example.com`
+- set up GIT using your credentials with console commands `git config --global user.name "John Doe"` and `git config --global user.email johndoe@example.com`
 
 ### Project Set Up
 
@@ -15,7 +15,7 @@
 - `npm install`
 
 - install playwright with dependenices:
-- `npx playwright install --with-deps`
+- using normal set up `npx playwright install` or silent insall `npx playwright install --with-deps`
 
 - finally run all tests by providing an enviroment and language to use when logging into Banker
 - `npx playwright test`

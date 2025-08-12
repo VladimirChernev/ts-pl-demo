@@ -11,7 +11,7 @@ export default defineConfig({
   reporter: [['html', { open: 'on-failure' }]],
 
   /* Maximum time one test can run for. Default is 30 sec (30 * 1000) */
-  timeout: 3 * 1000, // example for 2 min: timeout: 2 * 60 * 1000,
+  timeout: 30 * 1000, // example for 2 min: timeout: 2 * 60 * 1000,
 
   /* Maximum time to wait for a locator. Default is 5 sec (5 * 1000) */
   expect: { timeout: 5 * 1000 },
