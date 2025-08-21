@@ -52,9 +52,6 @@ export default defineConfig({
     video: `retain-on-failure`,
     // trace: `retain-on-failure`, // causes issues in parallel execution sometimes
 
-    /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    // trace: "on-first-retry",
-
     /* Activates slow motion exectution in headed mode */
     launchOptions: {
       slowMo: 500,

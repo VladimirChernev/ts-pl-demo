@@ -4,7 +4,7 @@
 
 ### Pre-condition:
 
-- istall prefered Ide (example: Visual Studio Code, IntelliJ etc.)
+- install prefered Ide (example: Visual Studio Code, IntelliJ etc.)
 - install Ide extensions: ESLint, Playwright, Prettier, Live Preview
 - install nodeJS LTS (latest stable version) from `https://nodejs.org/en/download`
 - check your nodeJS installed version with terminal command `npm -v` and `node -v`
