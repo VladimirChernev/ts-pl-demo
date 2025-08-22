@@ -34,7 +34,7 @@ const defaultHeaders = {
 
     const responseBody = await response.json();
     console.log('Respone Status:', response.status());
-    console.log('Response Body\n', JSON.stringify(responseBody, null, 2));
+    console.log('Response Body:\n', JSON.stringify(responseBody, null, 2));
 
     expect(response.status()).toBe(200);
   });
@@ -70,7 +70,7 @@ const defaultHeaders = {
 
     const responseBody = await response.json();
     console.log('Respone Status:', response.status());
-    console.log('Response Body\n', JSON.stringify(responseBody, null, 2));
+    console.log('Response Body:\n', JSON.stringify(responseBody, null, 2));
 
     expect(response.status()).toBe(201);
   });
@@ -92,7 +92,7 @@ const defaultHeaders = {
 
     const responseBody = await response.json();
     console.log('Respone Status:', response.status());
-    console.log('Response Body\n', JSON.stringify(responseBody, null, 2));
+    console.log('Response Body:\n', JSON.stringify(responseBody, null, 2));
 
     expect(response.status()).toBe(200);
   });
@@ -114,7 +114,7 @@ const defaultHeaders = {
 
     const responseBody = await response.json();
     console.log('Respone Status:', response.status());
-    console.log('Response Body\n', JSON.stringify(responseBody, null, 2));
+    console.log('Response Body:\n', JSON.stringify(responseBody, null, 2));
 
     expect(response.status()).toBe(200);
   });
