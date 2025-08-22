@@ -1,8 +1,7 @@
 {
-  "name": "banker-test-framework",
+  "name": "typescript-playwright-demo",
   "version": "1.0.0",
-  "description": "QA Automation Project implementing sanity and regression tests for BankerBG and BankerGR internal sites. Used technologies: - type script - playwright",
-  "main": "index.js",
+  "description": "Basic QA Automation Project for learning purposes. Used technologies: - type script - playwright",
   "scripts": {},
   "keywords": [
     "QA Automation",
