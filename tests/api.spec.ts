@@ -83,7 +83,7 @@ const defaultHeaders = {
   },
 ].forEach(({ url, headers }) => {
   test(`Get items`, { tag: ['@api'] }, async ({ request }) => {
-    console.log(`POST: ${url}`);
+    console.log(`GET: ${url}`);
     console.log('Request Headers:\n', JSON.stringify(headers, null, 2));
 
     const response: APIResponse = await request.get(url, {
@@ -105,7 +105,7 @@ const defaultHeaders = {
   },
 ].forEach(({ url, headers }) => {
   test(`Get item`, { tag: ['@api'] }, async ({ request }) => {
-    console.log(`POST: ${url}`);
+    console.log(`GET: ${url}`);
     console.log('Request Headers:\n', JSON.stringify(headers, null, 2));
 
     const response: APIResponse = await request.get(url, {
@@ -127,7 +127,7 @@ const defaultHeaders = {
   },
 ].forEach(({ url, headers }) => {
   test(`Delete item`, { tag: ['@api'] }, async ({ request }) => {
-    console.log(`POST: ${url}`);
+    console.log(`DELETE: ${url}`);
     console.log('Request Headers:\n', JSON.stringify(headers, null, 2));
 
     const response: APIResponse = await request.delete(url, {
